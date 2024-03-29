@@ -27,7 +27,7 @@ s.insert(2); // s = {2, 2}
 s.insert(2): // s = {2, 2, 2}
 s.insert(2); // s = {2, 2, 2}
 s.insert(4); // s = {2, 2, 2, 4}
-s.insert(0); // s = {0, 2, 2, 4}
+s.insert(0); // s = {0, 2, 2, 2, 4}
 s.remove(2); // s = {0, 2, 2, 4}
 s.remove(0); // s = {2, 2, 4}
 
