@@ -33,6 +33,10 @@ ThreeMultiSet::~ThreeMultiSet() {
     free();
 }
 
+size_t ThreeMultiSet::getU() const {
+    return u;
+}
+
 void ThreeMultiSet::insert(size_t num) {
     int countNum = count(num);
     if (num >= u || countNum == MAX_COUNT_OF_NUMBER) {

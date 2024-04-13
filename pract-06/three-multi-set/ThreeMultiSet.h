@@ -29,6 +29,8 @@ public:
 
     ~ThreeMultiSet();
 
+    size_t getU() const;
+
     void insert(size_t num);
 
     void remove(size_t num);
@@ -37,7 +39,7 @@ public:
 
     void printAll() const;
 
-    friend ThreeMultiSet intersect(const ThreeMultiSet& lhs, const ThreeMultiSet& rhs);
+    friend ThreeMultiSet intersect(const ThreeMultiSet &lhs, const ThreeMultiSet &rhs);
 
 private:
     void free();
@@ -53,4 +55,4 @@ private:
     static size_t shift(size_t num);
 };
 
-ThreeMultiSet intersect(const ThreeMultiSet& lhs, const ThreeMultiSet& rhs);
+ThreeMultiSet intersect(const ThreeMultiSet &lhs, const ThreeMultiSet &rhs);
