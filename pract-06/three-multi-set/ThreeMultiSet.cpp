@@ -14,7 +14,7 @@ ThreeMultiSet::ThreeMultiSet() : ThreeMultiSet(DEFAULT_U) {
 
 
 ThreeMultiSet::ThreeMultiSet(size_t u) : u(u), size(bucket(u - 1) + 1) {
-    buckets = new Bucket[size];
+    buckets = new Bucket[size] {};
 }
 
 ThreeMultiSet::ThreeMultiSet(const ThreeMultiSet &other) {
