@@ -149,20 +149,22 @@ public:
 ```c++
 #include <iostream>
 struct A {
-	int x;
+    int x;
+    A(int x) : x(x) { };
 };
 
 struct B : A {
-	int y;
-}
+    int y;
+    B(int x, int y) : A(x), y(y) { };
+};
 
 long sumXs(const A* arr, size_t size) {
-	long sum = 0;
-	for (size_t i = 0; i < size; ++i) {
-		sum += arr[i].x;
-	}
-	
-	return sum;
+    long sum = 0;
+    for (size_t i = 0; i < size; ++i) {
+        sum += arr[i].x;
+    }
+
+    return sum;
 }
 
 int main() {
